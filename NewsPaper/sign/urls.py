@@ -1,7 +1,7 @@
 from django.urls import path
 from django.contrib.auth.views import LoginView, LogoutView
 from .views import BaseRegisterView
-from .views import become_to_authors
+from .views import become_to_authors, become_to_subscribers
 
 urlpatterns = [
     path('login/', 
@@ -15,4 +15,6 @@ urlpatterns = [
          name='signup'),
     path('become/', 
          become_to_authors, name = 'become'),
+    path('subscribers/', 
+         become_to_subscribers, name = 'subscribers'),
 ]
