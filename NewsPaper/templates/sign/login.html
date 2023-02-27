@@ -1,0 +1,25 @@
+{% extends "main.html" %}
+
+{% block content %}
+<h2> Sign in </h2>
+<form method="post" action="{% url 'login' %}">
+{% csrf_token %}
+<table>
+<tr>
+    <td>{{ form.username.label_tag }}</td>
+    <td>{{ form.username }}</td>
+</tr>
+<tr>
+    <td>{{ form.password.label_tag }}</td>
+    <td>{{ form.password }}</td>
+</tr>
+</table>
+
+<input type="submit" value="Ok">
+</form>
+<button> <a href="/sign/signup"> Registration </a></button>
+<h3>or</h3>
+<h3><a href="/accounts/login">Use google authorization</a></h3>
+<span style="color: rgb(190, 7, 7)">Добавление в группу <i style="color:rgb(207, 122, 11)">common</i> происходит через регистрацию как в примере/ 
+Не добавляет через вход гугл и при регистрации обычной("Первая сверху") </span>
+{% endblock %}

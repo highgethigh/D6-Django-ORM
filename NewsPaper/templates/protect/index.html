@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+
+{% block content %}
+<h2>Authorized user page: <span style="color:rgba(199, 30, 30, 0.721)">{{request.user.username}}</span></h2>
+<div>This may contain personal information for each user.</div>
+
+<button> <a href="sign/logout/">Exit</a> </button>
+{% if is_not_authors %}
+<button><a href="sign/become/">I want to become an author</a></button>
+{% endif %}
+{% endblock %}
