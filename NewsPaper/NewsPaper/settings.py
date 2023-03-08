@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     # ... include the providers you want to enable:
     'allauth.socialaccount.providers.google',
+    # приложение для отправки почты
+    'django.core.mail',
 ]
 
 MIDDLEWARE = [
