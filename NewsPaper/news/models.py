@@ -39,9 +39,6 @@ class Author(models.Model):
         
 # модель Category
 class Category(models.Model):
-
-    #
-    subscribers = models.ManyToManyField(User, blank=True)
     # название категории новостей/статей их главная тематика
     name_category = models.CharField(max_length=55, unique=True)
 

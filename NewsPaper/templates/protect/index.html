@@ -1,19 +1,11 @@
 {% extends "main.html" %}
 
-{% load perm_link_authors %}
-
 {% block content %}
 <h2>Authorized user page: <span style="color:rgba(199, 30, 30, 0.721)">{{request.user.username}}</span></h2>
 <div>This may contain personal information for each user.</div>
 
-
-<button type="button" class="btn btn-outline-primary"><a href="sign/logout/" style="color: rgb(0, 0, 0)">Exit</a></button>
+<button> <a href="sign/logout/">Exit</a> </button>
 {% if is_not_authors %}
-<button type="button" class="btn btn-outline-primary"><a href="sign/become/" style="color: rgb(0, 0, 0)">I want to become an author</a></button>
+<button><a href="sign/become/">I want to become an author</a></button>
 {% endif %}
-<button type="button" class="btn btn-outline-primary"><a href="sign/subscribers/" style="color: rgb(0, 0, 0)">{% if request.user|has_group:"subscribers" %}
-    <b style="color: red">You are subscribed</i>
-    {% else %}
-    Subscribe to our newsletter</a></button>
-    {% endif %}
 {% endblock %}
