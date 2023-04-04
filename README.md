@@ -1,4 +1,4 @@
-# D5-Django-ORM
+# D6-Django-ORM
 # Перед запуском проекта запустить виртуальное окружение через консоль:
 ```
     source venv/bin/activate
