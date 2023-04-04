@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load custom_filters %} <!-- не забываем заранее загружать наши фильтры! -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+</head>
+<body>
+<h1> New article from the author <span style="color:blue">{{ post.post_link_author }}</span> from category "<span style="color:red">{{ post_link_category }}</span>"</h1>
+    <h2 align="center"> Header: {{ post.title }} </h2>
+    <div align="center">
+        <h3> Text:</h3>
+        <p> {{ post.text|truncatewords:50|censor:'*****' }} </p>
+    </div>
+    <div align="center">
+        <h3>Link:</h3>
+        <button><a href="http://127.0.0.1:8000{{ post.get_absolute_url }}">Go to article</a></button>
+    </div>
+
+</body>
+</html>
+
+

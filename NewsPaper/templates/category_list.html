@@ -1,0 +1,27 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+Categories
+{% endblock title %}
+
+{% block content %}
+<h1 align="center">Publication categories</h1>
+  <hr>
+<table>
+    <thead>
+    <th>
+        <h4>Categories:</h4>
+    </th>
+    </thead>
+    {% for category in categories %}
+    <tr>
+        <td>
+            <i>{{category.name_category}}:</i><br>
+        </td>
+        <td>
+            <a href="{% url 'category_subscription' category.id %}">Select category</a><br>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock content %}
