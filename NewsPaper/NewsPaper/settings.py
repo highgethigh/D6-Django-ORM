@@ -185,13 +185,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # smtp yandex -> другие программы -> настройте ящик -> первые две галки во всех пунктах
 EMAIL_HOST = 'smtp.yandex.ru' # адрес сервера Яндекс-почты для всех один и тот же
 EMAIL_PORT = 465 # порт smtp сервера тоже одинаковый
-EMAIL_HOST_USER = '' # ваше имя пользователя, например если ваша почта user@yandex.ru, то сюда надо писать user, иными словами, это всё то что идёт до собаки
-EMAIL_HOST_PASSWORD = '' # пароль от почты
+EMAIL_HOST_USER = 'anisimovofartem' # ваше имя пользователя, например если ваша почта user@yandex.ru, то сюда надо писать user, иными словами, это всё то что идёт до собаки
+EMAIL_HOST_PASSWORD = '526370xX+' # пароль от почты
 EMAIL_USE_SSL = True # Яндекс использует ssl, подробнее о том, что это, почитайте на Википедии, но включать его здесь обязательно
 
 
 # Module D6.3
-DEFAULT_FROM_EMAIL = '' # здесь указываем уже свою ПОЛНУЮ почту с которой будут отправляться письма
+DEFAULT_FROM_EMAIL = 'anisimovofartem@yandex.ru' # здесь указываем уже свою ПОЛНУЮ почту с которой будут отправляться письма
 
 # изменяем настройки так, как это было в документации
 # https://django-allauth.readthedocs.io/en/latest/installation.html

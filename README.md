@@ -1,4 +1,4 @@
-# D6-Django-ORM
+# D7-Django-ORM Cache
 # Перед запуском проекта запустить виртуальное окружение через консоль:
 ```
     source venv/bin/activate
