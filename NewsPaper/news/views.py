@@ -9,7 +9,6 @@ from datetime import datetime
 from django.core.paginator import Paginator
 from .forms import PostForm
 from django.contrib.auth.decorators import login_required
-
 # Create your views here.
 
 # создадим модель объектов, которые будем выводить
