@@ -22,6 +22,9 @@
     python3 manage.py dumpdata --format=xml > mydata.xml
 ```
 
+В итоге получится похожий файл, но уже в XML-формате:
+![img_1.png](img_1.png)
+
 Так, ну и теперь попробуем удалить данные через админ-панель и снова загрузить их, но уже через команду <b>loaddata</b>:
 ```
     python3 manage.py loaddata mydata.json
